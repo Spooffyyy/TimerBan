@@ -64,7 +64,6 @@ public function banAddress($address, $time) {
     }
 }
 
-
 	/**
 	 * Returns if player is banned or not
 	 *
