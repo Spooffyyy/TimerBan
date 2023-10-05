@@ -38,7 +38,7 @@ class TimerBan extends PluginBase implements Listener{
 		return true;
 	}
 
-	/**
+/**
  * Bans IP address for specific time
  *
  * Player|string $address
