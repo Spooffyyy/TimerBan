@@ -41,8 +41,8 @@ class TimerBan extends PluginBase implements Listener{
 	/**
 	 * Bans IP address for specific time
 	 *
-	 * @var Player|string	$address
-	 * @var float		$time
+	 * Player|string $address
+	 * float $time
 	 *
 	 * @return bool
 	 */
@@ -67,9 +67,9 @@ class TimerBan extends PluginBase implements Listener{
 	/**
 	 * Returns if player is banned or not
 	 *
-	 * @var Player|string	$player
+	 * Player|string $player
 	 *
-	 * @return bool|int
+	 * bool|int
 	 */
 	public function isBanned($player){
 		if($player instanceof Player){
@@ -86,7 +86,7 @@ class TimerBan extends PluginBase implements Listener{
 	/**
 	 * Returns if player is banned or not
 	 *
-	 * @var Player|string	$address
+	 * Player|string	$address
 	 *
 	 * @return bool|int
 	 */
