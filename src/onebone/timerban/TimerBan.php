@@ -39,14 +39,14 @@ class TimerBan extends PluginBase implements Listener{
 	}
 
 /**
- * Bans IP address for specific time
+ * Bans IP address for a specific time
  *
  * Player|string $address
  * float $time
  *
  * @return bool
  */
-public function banAddress($address, $time){
+public function banAddress($address, $time) {
     if ($address instanceof Player) {
         $address = $address->getAddress();
     }
@@ -63,6 +63,7 @@ public function banAddress($address, $time){
         return false;
     }
 }
+
 
 	/**
 	 * Returns if player is banned or not
