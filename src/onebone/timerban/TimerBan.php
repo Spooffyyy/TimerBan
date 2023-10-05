@@ -119,7 +119,7 @@ class TimerBan extends PluginBase implements Listener{
 			if($this->banList->get($player->getName()) > $now){
 				$time = ($this->banList->get(strtolower($player->getName())) - $now) / 3600;
 				$player->close("", "You are banned. You'll unban through - ".(int)$time." hour(s)");
-				$event->setCancelled();
+				$event->cancel();
 			}else{
 				$this->banList->remove(strtolower($player->getName()));
 			}
