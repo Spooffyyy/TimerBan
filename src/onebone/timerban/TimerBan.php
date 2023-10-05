@@ -9,7 +9,7 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerPreLoginEvent;
 use pocketmine\utils\Config;
-use pocketmine\Player;
+use pocketmine\player\Player;
 
 class TimerBan extends PluginBase implements Listener{
 	private $banList;
@@ -102,7 +102,7 @@ class TimerBan extends PluginBase implements Listener{
 	}
 
 	// NON API PART
-	public function onEnable(){
+	public function onEnable(): void {
 		if(!file_exists($this->getDataFolder())){
 			mkdir($this->getDataFolder());
 		}
