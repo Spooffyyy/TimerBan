@@ -18,8 +18,8 @@ class TimerBan extends PluginBase implements Listener{
 	/**
 	 * Bans player for specific time
 	 *
-	 * @var Player|string	$player
-	 * @var float					$time
+	 * Player|string $player
+	 * float					$time
 	 *
 	 * @return bool
 	 */
